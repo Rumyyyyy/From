@@ -49,136 +49,237 @@ table {
 
 /* body와 기본 텍스트 스타일 */
 body {
-	margin: 0;
+  margin: 0;
+}
+
+div.performanceMaketing {
+  max-width: 70%;
+  margin: auto;
+}
+
+div.performanceMaketing section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+div.performanceMaketing section h2{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@keyframes highlightAnimation {
+  0% {
+    background-size: 0% 100%;
   }
-  
-  div.performanceMaketing {
-	max-width: 900px;
-	margin: auto;
+  100% {
+    background-size: 100% 100%;
   }
-  
-  div.performanceMaketing section {
-	background: #ffffff;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.highlightStatic{
+  background-image: linear-gradient(transparent 60%, #ffff66 60%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: highlightAnimation 1s ease-out forwards;
+}
+
+.highlight {
+  background-image: linear-gradient(transparent 60%, #70a2ff 60%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s ease-out;
+}
+
+/* 실행될 때만 애니메이션 발동 */
+.highlight.animate {
+  background-size: 100% 100%;
+}
+
+.center{
+  text-align: center;
+}
+
+div.performanceMaketing section h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+div.performanceMaketing section p{
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+
+div.performanceMaketing section b{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.performanceMaketing section h2 ~ ul{
+  margin-bottom: 50px;
+}
+
+ul.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 20px auto 50px;
+}
+
+@media (max-width: 600px) {
+  ul.card-list {
+    grid-template-columns: 1fr; /* 모바일에선 한 줄씩 */
   }
-  
-  div.performanceMaketing section h2{
-	margin-bottom: 30px;
-	font-weight: 700;
-	font-size: 30px;
-  }
-  
-  div.performanceMaketing section h3 {
-	margin-bottom: 15px;
-	font-weight: 500;
-	font-size: 20px;
-  }
-  
-  div.performanceMaketing section p{
-	line-height: 30px;
-	margin-bottom: 20px;
-  }
-  
-  div.performanceMaketing section b{
-	font-size: 16px;
-	font-weight: 700;
-  }
-  
-  div.performanceMaketing section h2 ~ ul{
-	margin-bottom: 50px;
-  }
-  
-  div.performanceMaketing section ul {
-	list-style: none;
-	padding-left: 0;
-  }
-  
-  div.performanceMaketing section ul li {
-	margin-bottom: 10px;
-  }
-  
-  button.more {
-	padding: 10px 16px;
-	border: dashed 1px #014cd5;
-	background-color: #ffffff;
-	border-radius: 10px;
-	cursor: pointer;
-	margin: 10px 0 50px;
-  }
-  
-  /* 카드뉴스 부분: 초기 상태는 숨김 */
-  .card-detail {
-	margin: 20px 0 50px;
-	display: none; /* 기본적으로 카드뉴스는 숨겨져 있음 */
-  }
-  
-  /* 각 카드의 스타일 */
-  .card {
-	background: #fdfdfd;
-	border-left: 6px solid #007aff;
-	margin-bottom: 20px;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .card h4 {
-	margin-top: 0;
-	color: #34495e;
-	line-height: 40px;
-	font-weight: 700;
-  }
-  
-  .card ul {
-	padding-left: 20px;
-  }
-  
-  .card img{
-	width:100%; 
-	border-radius:10px; 
-	margin-top:20px;
-  }
-  
-  /* 무신사 카드 스타일 */
-  .musinsa .card {
-	border-left-color: blue;
-  }
-  
-  
-  /* 에이블리 카드 스타일 */
-  .ably .card {
-	border-left-color: red;
+}
+
+
+ul.card-list li {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: #007aff dashed 3px;
+}
+
+ul.card-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12);
+}
+ul.card-list li:hover b{
+	font-size: 18px;
   }
 
-  /* 배달의민족 카드 스타일 */
-  .baemin .card {
+ul.card-list b {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul.card-list li p{
+	margin-bottom: 0;
+}
+
+ul.card-list span {
+  font-size: 14px;
+  color: #555;
+  line-height: 25px;
+}
+
+div.performanceMaketing section ul li {
+  margin-bottom: 20px;
+}
+
+button.more {
+  padding: 10px 16px;
+  border: dashed 1px #014cd5;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0 50px;
+}
+
+/* 카드뉴스 부분: 초기 상태는 숨김 */
+.card-detail {
+  margin: 20px 0 50px;
+  display: none; /* 기본적으로 카드뉴스는 숨겨져 있음 */
+}
+
+/* 각 카드의 스타일 */
+.card {
+  background: #fdfdfd;
+  border-left: 6px solid #007aff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h4 {
+  margin-top: 0;
+  color: #34495e;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card img{
+  width:100%; 
+  border-radius:10px; 
+  margin-top:20px;
+}
+
+.cardList1 .card {
+  border-left-color: gray;
+}
+.cardList2 .card {
+  border-left-color: red;
+}
+.cardList3 .card {
+	border-left-color: blue;
+}
+.cardList4 .card {
 	border-left-color: greenyellow;
+}
+
+/* 전체 카드 가로 정렬 */
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap; /* 화면 작아지면 자동 줄바꿈 */
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* 각 카드의 공통 스타일 */
+.cardList {
+  flex: 1 1 40%; /* 반반 배치 */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 반응형 대응 */
+@media (max-width: 768px) {
+  .cardList {
+    flex: 1 1 100%;
   }
-  
-  
-  @keyframes growShrink {
-	0% {
-	  font-size: 20px;
-	}
-	50% {
-	  font-size: 24px;
-	}
-	100% {
-	  font-size: 20px;
-	}
 }
-  
-.finalMessage {
-	font-size: 20px;
-	font-weight: 700;
-	border-radius: 10px;
-	animation: growShrink 2s ease-in-out infinite; /* 글자 커졌다 작아짐 */
-	text-align: center;
+
+.finalMessageSection{
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 30px;
+  font-weight: 700;
 }
-  
-.finalMessageSection {
-	margin: 80px 0;
-	height: 80px;
+
+.finalMessage{
+  line-height: 40px;
+}
+
+.finalMessageSection .finalMessage:nth-child(2){
+  display: inline-block;
+}
+
+a.inquiry{
+  display: block;
+  width: 15%;
+  margin: 0 auto 50px;
+  text-align: center;
+  border: #70a2ff solid 2px;
+  font-size: 16px;
+  text-decoration: none; 
+  color: #000; 
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+a.inquiry:hover{
+  font-weight: 700;
 }
