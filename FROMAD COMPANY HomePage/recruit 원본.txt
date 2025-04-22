@@ -1,0 +1,303 @@
+{{$header}}
+<div id="contents">
+<div id="container">
+<main role="main" class="sub_white"> 
+
+
+
+
+<!-- 서브상단 대메뉴 및 서브메뉴 -->
+{{$sub_img}}
+
+
+
+
+<!-- 타이틀 -->
+<div class="con_tit">
+<h3>
+채용안내
+<h3>
+</div>
+ 
+
+ 
+
+<!-- 본문 시작 -->
+<div id="main" class="sub_all">
+<section class="gray_bg mark_bg">
+<div class="inner_s">
+
+
+
+
+
+
+<!-- 인재상-->
+<h4 class="fC img_m wow1 slideInTop">인재상</h4>
+
+
+<section class="floatBox circle_box">
+<ul>
+<li class="wow1 slideInBottom">
+<dl>
+<dt><img src="{{$template}}/img/recruit_img1.jpg"></dt>
+<dd>
+<h5 class="fC">꿈을 키우는 인재</h5>
+<p>인재 여러분들이 꿈에 가까워 질수록 저희 (주)프롬애드컴퍼니도 더욱 성장할 수 있는 발판이 되고 있습니다. 많은 사우분들의 꿈을 도우면서 성장하는 회사입니다. </p>
+</dd>
+</dl>
+</li>
+
+
+<li class="wow1 slideInBottom">
+<dl>
+<dt><img src="{{$template}}/img/recruit_img2.jpg"></dt>
+<dd>
+<h5 class="fC">목표를 향해가는 인재</h5>
+<p>목표를 이루기 위한 노력만이 아닌 기획과 준비가 중요합니다. 목표를 이루는 법을 배울 수 있는 멘토들과 함께 꿈을 이뤄갑시다.
+ </p>
+</dd>
+</dl>
+</li>
+
+
+<li class="wow1 slideInBottom">
+<dl>
+<dt><img src="{{$template}}/img/recruit_img3.jpg"></dt>
+<dd>
+<h5 class="fC">성취감을 아는 인재 </h5>
+<p>AE, 마케터, 등 저희 주요 담당자들은 성취감을 가장 많이 느낄 수있는 포지션입니다. 저희 (주)프롬애드컴퍼니의 강점을 바로 성취감을 느끼면서 일할 수 있는 시스템입니다. </p>
+</dd>
+</dl>
+</li>
+ 
+</ul>
+</section>
+
+
+
+
+
+<!-- 복리후생-->
+
+
+<h4 class="fC wow1 slideInTop">복리후생</h4>
+
+
+<ul class="recruit">
+
+
+
+
+<!-- 첫번째 단락-->
+
+<li>
+
+<div class="img_wrap wow1 slideInLeft">
+<img src="{{$template}}/img/recruit_img2_1.jpg" alt="" />
+</div>
+
+<div class="text_wrap wow2 slideInRight">
+<h5 class="common"><span>문화지원</span></h5>
+<strong>사내동아리 활동 지원</strong>
+<p>임직원의 여가생활을 위하여  다양한 활동을 지원하고 있습니다. 
+<span class="pcbr"></span>
+풋살, 게임, 방탈출, 독서, 동기부여, 등의 동아리가 있습니다. 
+<span class="pcbr"></span>
+추계체육대회, 여름 테마파크, 등 시즌별 다양한 행사를 진행합니다.
+</p>
+<strong>기타지원</strong>
+<p>쉬는시간 2시간30분, 자유로운 연차사용, 조기퇴근이벤트,
+<span class="pcbr"></span>
+ 성과급 지급, 경조사지원, 등등
+</p>
+</div>
+</li>
+
+
+
+
+<!-- 두번째 단락-->
+
+<li>
+<div class="img_wrap wow1 slideInLeft">
+<img src="{{$template}}/img/recruit_img2_2.jpg" alt="" />
+</div>
+
+<div class="text_wrap wow2 slideInRight">
+<h5 class="common"><span>사원혜택</span></h5>
+<strong>1년 1회 해외여행지원</strong>
+<p>1년의 1번 해외여행을 지원합니다. </p>
+<strong>경조사지원</strong>
+<p>경조사회를 운영중이며, 가족경조사, 본인의 생일, 등의 경조사를 지원합니다. 
+<span class="pcbr"></span>
+상세내용을 작성하실 수 있습니다.</p>
+<strong>성과급지급 </strong>
+<p>가장 중요한 복지는 '돈을 많이 벌 수 있는 회사'입니다. </p>
+</div>
+</li>
+
+
+
+<!-- 세번째 단락-->
+<li>
+<div class="img_wrap wow1 slideInLeft">
+<img src="{{$template}}/img/recruit_img2_3.jpg" alt="" />
+</div>
+
+<div class="text_wrap wow2 slideInRight">
+<h5 class="common"><span>문화지원</span></h5>
+<strong>사내동아리 활동 지원</strong>
+<p>임직원의 여가생활을 위하여  다양한 활동을 지원하고 있습니다. 상세내용을 작성하실 수 있습니다.  상세내용을 작성하실 수 있습니다. </p>
+<strong>가정의 날</strong>
+<p>임직원의 여가생활을 위하여  다양한 활동을 지원하고 있습니다. 
+<span class="pcbr"></span>
+상세내용을 작성하실 수 있습니다.  상세내용을 작성하실 수 있습니다. </p>
+<strong>상세항목</strong>
+<p>상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다.</p>
+</div>
+</li>
+
+
+<!-- 네번째 단락-->
+<li>
+<div class="img_wrap wow1 slideInLeft">
+<img src="{{$template}}/img/recruit_img2_4.jpg" alt="" />
+</div>
+
+<div class="text_wrap wow2 slideInRight">
+<h5 class="common"><span>사원혜택</span></h5>
+<strong>복지카드제공</strong>
+<p>상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다. 
+<span class="pcbr"></span>
+상세내용을 작성하실 수 있습니다.</p>
+<strong>경조사지원</strong>
+<p>상세내용을 작성하실 수 있습니다. 
+<span class="pcbr"></span>
+상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다.</p>
+<strong>경조사지원</strong>
+<p>상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다. 상세내용을 작성하실 수 있습니다.</p>
+</div>
+</li>
+
+
+
+</ul>
+ 
+
+
+
+ 
+<!--테이블 구간--> 
+
+<h4 class="fC wow1 slideInTop">모집분야</h4>
+<h5 class="common  wow1 slideInRight"><span>테이블 스타일 기본</span></h5>
+<table cellspacing="0" border="1" class="tstyle_common wow1 slideInBottom" summary="" width="100%">
+<caption>
+모집부서 상세내용
+</caption>
+<colgroup>
+<col width="20%"></col>
+<col width="20%"></col>
+<col width="60%"></col>
+</colgroup>
+<thead>
+<tr>
+<th class="fir">모집부서</th>
+<th>날짜</th>
+<th>상세내용</th>
+</tr>
+</thead>                
+<tbody>
+<tr>
+<th>경영관리</th>
+<td class="fC">2022-09-01</td>
+<td>웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 웹팩토리의 전반적인 경영관리 </td>
+</tr>
+<tr>
+<th>영업</th>
+<td class="fC">2022-09-01</td>
+<td>영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용</td>
+</tr>
+<tr>
+<th>마케팅</th>
+<td class="fC">2022-09-01</td>
+<td>마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용</td>
+</tr>
+<tr>
+<th>연구소</th>
+<td class="fC">2022-09-01</td>
+<td>연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용</td>
+</tr>
+<tr>
+<th>설계팀</th>
+<td class="fC">2022-09-01</td>
+<td>설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용설계팀이 하는일 상세내용 설계팀이 하는일 상세내용</td>
+</tr>
+</tbody>
+</table>
+ 
+
+
+
+
+
+
+<h5 class="common wow1 slideInRight"><span>테이블 스타일 2</span></h5>
+<table cellspacing="0" border="1" class="tstyle_common tstyle_02 wow1 slideInBottom" summary="" width="100%">
+<caption>
+모집부서 상세내용
+</caption>
+<colgroup>
+<col width="20%"></col>
+<col width="80%"></col>
+</colgroup>
+               
+<tbody>
+<tr>
+ <th>경영관리</th>
+<td>
+<ul>
+<li>리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 </li>
+<li>리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 </li>
+<li>리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 리스트 항목 기입 </li>
+</ul>
+
+</td>
+</tr>
+<tr>
+ <th>영업</th>
+<td><span>포인트 텍스트</span>영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용 영업팀 상세내용</td>
+</tr>
+<tr>
+ <th>마케팅</th>
+<td>마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용 마케팅 부서의 목표와 상세내용</td>
+</tr>
+<tr>
+ <th>연구소</th>
+<td>연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용 연구소의 연구내용</td>
+</tr>
+<tr>
+ <th>설계팀</th>
+<td>설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용 설계팀이 하는일 상세내용설계팀이 하는일 상세내용 설계팀이 하는일 상세내용</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+ 
+
+
+
+
+
+ 
+<!-- 본문 끝-->
+
+
+</main>
+</div>
+</div>
+{{$footer}}
+</body>
+</html>
