@@ -1,0 +1,121 @@
+
+/* ! reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ! start */
+.contents{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.contentsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contentsList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    gap: 20px;
+}
+
+.txtWrap {
+    flex: 1;
+}
+
+.imgWrap {
+    flex: 1;
+}
+
+.imgWrap img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sectionTitle{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subText{
+    font-size: 20px;
+    font-weight: 400;
+    color: #777777
+}
+
+
+/* ? ul li 애니메이션  */
+
+/* 공통 초기 상태 */
+.contentsList li .txtWrap,
+.contentsList li .imgWrap {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* 방향 다르게 이동 */
+.contentsList li .txtWrap {
+  transform: translateX(-100px); /* 왼쪽 */
+}
+
+.contentsList li .imgWrap {
+  transform: translateX(100px); /* 오른쪽 */
+}
+
+/* 스크롤로 등장할 때 */
+.contentsList li.reveal.active .txtWrap,
+.contentsList li.reveal.active .imgWrap {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ? 애니메이션 필요 부분 종료 */

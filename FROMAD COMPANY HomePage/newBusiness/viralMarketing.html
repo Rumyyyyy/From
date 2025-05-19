@@ -4,47 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
-    <div>
-        <ul>
+    <div class="contents">
+        <ul class="contentsList">
             <li>
                 <div class="txtWrap">
                     <p class="sectionTitle">방문자의 흥미를 이끄는 <br>블로그 리뷰</p>
+                    <p class="subText">실제 방문 고객들이 우리 가게의 장점을 살린 <br>높은 퀄리티의 정성스러운 후기를 제공해요.</p>
                 </div>
-
-                <div class="txtWrap">
-
+                
+                <div class="imgWrap">
+                    <img src="https://placehold.co/1000x600" alt="임시img">
                 </div>
             </li>
             <li>
                 <div class="txtWrap">
                     <p class="sectionTitle">신뢰도를 의미하는 <br>영수증 리뷰</p>
+                    <p class="subText">실제 방문 고객들이 우리 가게의 장점을 살린 <br>높은 퀄리티의 정성스러운 후기를 제공해요.</p>
                 </div>
 
-                <div class="txtWrap">
-
+                <div class="imgWrap">
+                    <img src="https://placehold.co/1000x600" alt="임시img">
                 </div>
             </li>
             <li>
                 <div class="txtWrap">
                     <p class="sectionTitle">상위 노출에 효과적인 <br>리워드 트래픽</p>
+                    <p class="subText">실제 방문 고객들이 우리 가게의 장점을 살린 <br>높은 퀄리티의 정성스러운 후기를 제공해요.</p>
                 </div>
 
-                <div class="txtWrap">
-
+                <div class="imgWrap">
+                    <img src="https://placehold.co/1000x600" alt="임시img">
                 </div>
             </li>
             <li>
                 <div class="txtWrap">
                     <p class="sectionTitle">플레이스 핵심 요소 <br>저장하기</p>
+                    <p class="subText">실제 방문 고객들이 우리 가게의 장점을 살린 <br>높은 퀄리티의 정성스러운 후기를 제공해요.</p>
                 </div>
 
-                <div class="txtWrap">
-
+                <div class="imgWrap">
+                    <img src="https://placehold.co/1000x600" alt="임시img">
                 </div>
             </li>
         </ul>
     </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // 한 번만 실행
+              }
+            });
+          }, {
+            threshold: 0.3
+          });
+      
+          const listItems = document.querySelectorAll('.contentsList li');
+          listItems.forEach(li => {
+            li.classList.add('reveal'); // 초기 클래스
+            observer.observe(li); // 관찰 시작
+          });
+        });
+      </script>
 </body>
 </html>
