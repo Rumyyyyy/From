@@ -69,6 +69,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .cardList > li{
@@ -79,6 +80,9 @@ table {
   padding: 30px 35px;
   align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 30px;
+  flex: 1 1 calc(25% - 15px);
+  box-sizing: border-box;
 }
 
 .iconTag{
@@ -86,12 +90,14 @@ table {
   height: 30px;
   padding: 15px;
   border-radius: 15px;
+  text-align: center;
   min-height: inherit;
   background-color: #eeeeee;
 }
 
 .iconTag.blue{
   background-color: #f0f5ff;
+  margin-bottom: 15px;
 }
 
 .icon img{
@@ -179,6 +185,7 @@ table {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 20px;
 }
 
 .sectionTitle{
@@ -241,3 +248,20 @@ table {
 
 
 /* ? 애니메이션 필요 부분 종료 */
+
+
+
+/* ? 반응형 */
+
+@media (max-width: 1024px) {
+  .cardList > li {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+/* ✅ 더 줄어들면 1개씩 */
+@media (max-width: 600px) {
+  .cardList > li {
+    flex: 1 1 100%;
+  }
+}
