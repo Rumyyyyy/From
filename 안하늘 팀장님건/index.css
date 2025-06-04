@@ -1,0 +1,48 @@
+.centerHeader {
+    width: 60%;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+.centerHeader img {
+    width: 200px;
+    display: inline-block;
+}
+
+h2{
+    font-size: 24px;
+    color: gray;
+}
+
+h3{
+    font-size: 28px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a img{
+    width: 100%;
+}
+
+section{
+    width: 60%;
+    margin: 20px auto 50px;
+}
+
+.section-wrapper {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section2, .section3 {
+    flex: 1;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+}
