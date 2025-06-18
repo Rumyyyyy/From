@@ -113,6 +113,7 @@ table {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
+  color: #666666;
 }
 
 .box{
@@ -263,5 +264,84 @@ table {
 @media (max-width: 600px) {
   .cardList > li {
     flex: 1 1 100%;
+  }
+}
+
+/* ! 모바일 css */
+@media screen and (max-width: 800px) {
+
+  .cardTxtWrap br {        /* 카드 문단 안 <br> */
+    display: none;         /* 화면에 안 보이게!  */
+  }
+
+  
+  /* 전체 폭 · 여백 */
+  .contents{
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+
+  /* ───────── 카드 영역 ───────── */
+  .cardList{
+    gap: 15px;             
+  }
+  .cardList > li{
+    flex: 1 1 calc(50% - 10px);  
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  .iconTag{
+    padding: 12px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+
+    
+  }
+  .cardTxtWrap{
+    width: 100%;
+  }
+  .cardTxtWrap p{
+    font-size: 16px;
+  }
+
+  /* ───────── 텍스트+이미지 섹션(SNSList) ───────── */
+  .contentsList li{
+    flex-direction: column;   
+    align-items: flex-start; 
+  }
+  .txtWrap, .imgWrap{
+    width: 100%;
+  }
+  .imgWrap{                  
+    margin-top: 20px;
+  }
+
+  /* ───────── 공통 타이틀·본문 ───────── */
+  .sectionTitle{
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    word-break: keep-all;
+  }
+  .subText{
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* ───────── CTA 박스(맨 아래) ───────── */
+  .box{
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .btn{
+    position: relative;       
+    top: auto; right: auto;
+    transform: none;
+    display: inline-block;
+    margin: 20px auto 0;
+    font-size: 15px;
   }
 }

@@ -84,7 +84,7 @@
                     </div>
                     
                     <div class="imgWrap">
-                        <img src="img/실장님 화이팅 5.jpg" alt="SNS 마케팅 설명 img">
+                        <img src="img/viral/viral1.jpg" alt="바이럴마케팅정의">
                     </div>
                 </li>
                 <li>
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="imgWrap">
-                        <img src="img/실장님 화이팅 6.jpg" alt="SNS 나이별 이용자 통계 img">
+                        <img src="img/viral/viral2.jpg" alt="바이럴마케팅특징">
                     </div>
                 </li>
                 <li>
@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="imgWrap">
-                        <img src="img/실장님 화이팅.jpg" alt="임시img">
+                        <img src="img/viral/viral3.jpg" alt="바이럴마케팅종류">
                     </div>
                 </li>
                 <li>
@@ -159,52 +159,30 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-          const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // 한 번만 실행
-              }
-            });
-          }, {
-            threshold: 0.3
-          });
-      
-          const listItems = document.querySelectorAll('.contentsList li');
-          listItems.forEach(li => {
-            li.classList.add('reveal'); // 초기 클래스
-            observer.observe(li); // 관찰 시작
-          });
-        });
-
-
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
                 entry.target.classList.add('active');
                 observer.unobserve(entry.target);
-                }
+            }
             });
-            }, {
-            threshold: 0.3
-            });
+        }, { threshold: 0.3 });
 
-            // 기존 SNS 리스트용 애니메이션
-            const listItems = document.querySelectorAll('.contentsList li');
-            listItems.forEach(li => {
+        // contentsList li 애니메이션
+        const listItems = document.querySelectorAll('.contentsList li');
+        listItems.forEach(li => {
             li.classList.add('reveal');
             observer.observe(li);
-            });
+        });
 
-            // cardList 애니메이션
-            const cardItems = document.querySelectorAll('.cardList li');
-            cardItems.forEach(li => {
+        // cardList li 애니메이션
+        const cardItems = document.querySelectorAll('.cardList li');
+        cardItems.forEach(li => {
             li.classList.add('slideFromRight');
             observer.observe(li);
-            });
         });
+        });
+
       </script>
 </body>
 </html>
