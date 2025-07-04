@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>블로그 임대 지원금 소멸 안내</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      background: linear-gradient(135deg, #f0f2f5, #e3eaf2);
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .wrapper {
+      width: 70%;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 20px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+      text-align: center;
+    }
+
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 14px;
+    }
+
+    .highlight {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 18px;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+      text-align: left;
+      display: inline-block;
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .button {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 450px;
+      font-size: 20px;
+      margin: 23px auto 0;
+      background-color: #ffce00;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      padding: 14px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ffd633;
+    }
+
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="card">
+      <div class="title">⏰ [7일 후 지원금 소멸 예정입니다]</div>
+      <p><span class="highlight">블로그 임대 지원금 소멸 안내</span></p>
+      <p>안녕하세요, 파트너님.<br>
+      블로그 파트너쉽 전문 브랜드 <strong>(주)지바</strong>입니다.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-title">💡 어떤 내용인가요?</div>
+      <p>지금까지 많은 파트너님들께서 저희 서비스를 통해<br>
+      안 쓰던 블로그를 <strong>목돈으로 판매</strong>하여 수익을 창출하고 계십니다.</p>
+      <p>하지만 놓치기 쉬운 것이 있습니다. 바로 <span class="highlight">임대 계약 시 제공된 추가 지원금</span>의 소멸입니다.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-title">📌 지원금 지급 히스토리</div>
+      <ul>
+        <li>💸 지급일 : 문의 후 5분 이내 입금</li>
+        <li>🛠 사용처 : 디자인 변경, 포스팅 대행, 키워드 최적화 등</li>
+      </ul>
+      <p>해당 지원금은 <strong>마케팅 효율을 높이기 위한 추가 혜택</strong>으로,<br>
+      <span class="highlight">기한 내 미사용 시 자동 소멸</span>되며 복구가 어렵습니다.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-title">⛔ 7일 후 소멸 예정</div>
+      <p><strong>지금 확인이 필요합니다.</strong><br>
+      파트너님께 배정된 지원금은 <span class="highlight">7일 후 만료</span>되며,<br>
+      이후에는 별도 재지급 없이 <strong>자동 소멸</strong> 처리됩니다.</p>
+
+      <a href="https://pf.kakao.com/_xfBcan/chat" class="button" onclick="createRipple(event)" target="_blank">→ 지원금 내역 바로 확인하기</a>
+    </div>
+
+    <div class="card">
+      <div class="section-title">📝 블로그가 이렇게 활용되고 있어요</div>
+      <ul>
+        <li>🏥 대형병원 마케팅 광고</li>
+        <li>⚖️ 대형로펌 광고</li>
+        <li>🛍 자영업자 키워드 마케팅</li>
+        <li>📍 플레이스 상위노출</li>
+        <li>🔁 고객 전환 시스템</li>
+      </ul>
+      <p>많은 파트너님들이 이 기회를 통해 <strong>성과를 높이고</strong> 계십니다.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-title">📣 마무리 안내</div>
+      <p>지원금은 단순한 혜택이 아닌,<br><strong>파트너님의 블로그 성과를 높이기 위한 투자</strong>입니다.</p>
+      <p>필요하신 부분이 있다면 언제든지 저희 팀에 말씀해주세요.<br>감사합니다.</p>
+
+      <div class="contact">
+        ☎ 고객센터 : <a href="tel:18775212">1877-5212</a><br>
+        📱 24시간 : <a href="tel:01044402477">010-4440-2477</a><br>
+        💬 카카오채널 : <strong>주식회사 지바</strong>
+      </div>
+    </div>
+    <a href="https://blog.naver.com/ziba_/223912569265" class="button" onclick="createRipple(event)" target="_blank">→ 실제 사례 확인하기</a>
+    <a href="https://xn--9g3b17fc2bc9jc2at57c.com/" class="button" onclick="createRipple(event)" target="_blank">→ (주)지바 알아보기</a>
+  </div>
+
+  <script>
+    // 카드 순차 등장 애니메이션
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, index * 150);
+    });
+
+    // 버튼 ripple 효과
+    function createRipple(e) {
+      const button = e.currentTarget;
+      const circle = document.createElement("span");
+      const diameter = Math.max(button.clientWidth, button.clientHeight);
+      const radius = diameter / 2;
+
+      circle.style.width = circle.style.height = `${diameter}px`;
+      circle.style.left = `${e.clientX - button.offsetLeft - radius}px`;
+      circle.style.top = `${e.clientY - button.offsetTop - radius}px`;
+      circle.classList.add("ripple");
+
+      const ripple = button.getElementsByClassName("ripple")[0];
+      if (ripple) ripple.remove();
+      button.appendChild(circle);
+    }
+  </script>
+
+</body>
+</html>
